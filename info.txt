@@ -1,0 +1,4 @@
+Key .................... base64:2Vhv3ymYtyQbN+uD3pzEIeD0YeWifm1loT1A1sCom48=  
+  Cipher ......................................................... AES-256-CBC  
+  Encrypted file .............................................. .env.encrypted
+

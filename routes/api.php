@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\API\TaskController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -12,6 +13,9 @@ Route::group([
         Route::get('/user/{user}', [App\Http\Controllers\API\UserController::class, 'show']);
         Route::put('/user/{user}', [App\Http\Controllers\API\UserController::class, 'update']);
         Route::delete('/user/{user}', [App\Http\Controllers\API\UserController::class, 'delete']);
+
+       
+        
     });
     Route::post('/login', [App\Http\Controllers\API\AuthController::class, 'login']);
     Route::post('/signup', [App\Http\Controllers\API\AuthController::class, 'register']);
@@ -20,4 +24,9 @@ Route::group([
         return "TEST";
     });
 
+    Route::get('/controls',[App\Http\Controllers\API\ControlController::class, 'index']);
+    Route::post('/controls/add',[App\Http\Controllers\API\ControlController::class, 'add']);
+
+   
+    Route::post('/task/add',[TaskController::class, 'store']);
 });

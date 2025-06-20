@@ -38,6 +38,7 @@ class ComposerStaticInit7e8c3c14ff33b199b4a0838993eb8423
         'ce9671a430e4846b44e1c68c7611f9f5' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery.php',
         'a1cfe24d14977df6878b9bf804af2d1c' => __DIR__ . '/..' . '/nunomaduro/collision/src/Adapters/Phpunit/Autoload.php',
         'ec07570ca5a812141189b1fa81503674' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert/Functions.php',
+        'b4e3f29b106af37a2bb239f73cdf68c7' => __DIR__ . '/../..' . '/app/helpers.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -411,8 +412,8 @@ class ComposerStaticInit7e8c3c14ff33b199b4a0838993eb8423
         ),
         'League\\Uri\\' => 
         array (
-            0 => __DIR__ . '/..' . '/league/uri-interfaces',
-            1 => __DIR__ . '/..' . '/league/uri',
+            0 => __DIR__ . '/..' . '/league/uri',
+            1 => __DIR__ . '/..' . '/league/uri-interfaces',
         ),
         'League\\OAuth2\\Server\\' => 
         array (
@@ -578,8 +579,46 @@ class ComposerStaticInit7e8c3c14ff33b199b4a0838993eb8423
     );
 
     public static $classMap = array (
+        'App\\Http\\Controllers\\API\\QuestionAnswerController' => __DIR__ . '/../..' . '/app/Http/Controllers/API/QuestionAnswerController.php',
+        'App\\Http\\Controllers\\API\\QuestionAttemptController' => __DIR__ . '/../..' . '/app/Http/Controllers/API/QuestionAttemptController.php',
+        'App\\Http\\Controllers\\API\\QuestionController' => __DIR__ . '/../..' . '/app/Http/Controllers/API/QuestionController.php',
+        'App\\Http\\Controllers\\API\\QuestionTypeController' => __DIR__ . '/../..' . '/app/Http/Controllers/API/QuestionTypeController.php',
+        'App\\Http\\Controllers\\API\\QuizAttemptController' => __DIR__ . '/../..' . '/app/Http/Controllers/API/QuizAttemptController.php',
+        'App\\Http\\Controllers\\API\\QuizController' => __DIR__ . '/../..' . '/app/Http/Controllers/API/QuizController.php',
+        'App\\Http\\Controllers\\API\\StorageController' => __DIR__ . '/../..' . '/app/Http/Controllers/API/StorageController.php',
+        'App\\Http\\Controllers\\API\\UserController' => __DIR__ . '/../..' . '/app/Http/Controllers/API/UserController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
+        'App\\Http\\Requests\\ControlRequest' => __DIR__ . '/../..' . '/app/Http/Requests/ControlRequest.php',
+        'App\\Http\\Requests\\LoginRequest' => __DIR__ . '/../..' . '/app/Http/Requests/LoginRequest.php',
+        'App\\Http\\Requests\\RegisterRequest' => __DIR__ . '/../..' . '/app/Http/Requests/RegisterRequest.php',
+        'App\\Http\\Requests\\UserRequest' => __DIR__ . '/../..' . '/app/Http/Requests/UserRequest.php',
+        'App\\Mail\\ControlEmail' => __DIR__ . '/../..' . '/app/Mail/ControlEmail.php',
+        'App\\Models\\Client' => __DIR__ . '/../..' . '/app/Models/Client.php',
+        'App\\Models\\Control' => __DIR__ . '/../..' . '/app/Models/Control.php',
+        'App\\Models\\ControlOccurrence' => __DIR__ . '/../..' . '/app/Models/ControlOccurrence.php',
+        'App\\Models\\ControlProcedure' => __DIR__ . '/../..' . '/app/Models/ControlProcedure.php',
+        'App\\Models\\ControlRisk' => __DIR__ . '/../..' . '/app/Models/ControlRisk.php',
+        'App\\Models\\ControlType' => __DIR__ . '/../..' . '/app/Models/ControlType.php',
+        'App\\Models\\Department' => __DIR__ . '/../..' . '/app/Models/Department.php',
+        'App\\Models\\Frequency' => __DIR__ . '/../..' . '/app/Models/Frequency.php',
+        'App\\Models\\KeyType' => __DIR__ . '/../..' . '/app/Models/KeyType.php',
+        'App\\Models\\Procedure' => __DIR__ . '/../..' . '/app/Models/Procedure.php',
+        'App\\Models\\Reminder' => __DIR__ . '/../..' . '/app/Models/Reminder.php',
+        'App\\Models\\Role' => __DIR__ . '/../..' . '/app/Models/Role.php',
+        'App\\Models\\SharedContentByMe' => __DIR__ . '/../..' . '/app/Models/SharedContentByMe.php',
+        'App\\Models\\Status' => __DIR__ . '/../..' . '/app/Models/Status.php',
+        'App\\Models\\Task' => __DIR__ . '/../..' . '/app/Models/Task.php',
+        'App\\Models\\TaskProcessOwner' => __DIR__ . '/../..' . '/app/Models/TaskProcessOwner.php',
+        'App\\Models\\Upload' => __DIR__ . '/../..' . '/app/Models/Upload.php',
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
+        'App\\Models\\UserActivity' => __DIR__ . '/../..' . '/app/Models/UserActivity.php',
+        'App\\Models\\UserClient' => __DIR__ . '/../..' . '/app/Models/UserClient.php',
+        'App\\Models\\UserDepartment' => __DIR__ . '/../..' . '/app/Models/UserDepartment.php',
+        'App\\Models\\UserUserType' => __DIR__ . '/../..' . '/app/Models/UserUserType.php',
+        'App\\Models\\UsersCustomField' => __DIR__ . '/../..' . '/app/Models/UsersCustomField.php',
+        'App\\Models\\UsersCustomFieldsValue' => __DIR__ . '/../..' . '/app/Models/UsersCustomFieldsValue.php',
+        'App\\Models\\UsersPlatform' => __DIR__ . '/../..' . '/app/Models/UsersPlatform.php',
+        'App\\Models\\controlCompletion' => __DIR__ . '/../..' . '/app/Models/controlCompletion.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
         'Brick\\Math\\BigDecimal' => __DIR__ . '/..' . '/brick/math/src/BigDecimal.php',
